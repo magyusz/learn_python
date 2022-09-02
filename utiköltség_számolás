@@ -1,0 +1,11 @@
+# Utiköltség számoló:
+
+fogyasztas_orszagut = float(input('Mennyit fogyaszt országuton? :'))
+fogyasztas_varos = float(input('Mennyit fogyaszt városban? :'))
+km_orszagut = float(input('Országuton megtett km? :'))
+km_varos = float(input('Varosban megtett km? :'))
+uzemanyagar = float(input('Mennyi egy liter üzemanyag? :'))
+autopalya_matrica = float(input('Egyeb koltsegek? :'))
+parkolas = float(input('Parkolási díj? :'))
+koltseg = ((km_orszagut / 100 * fogyasztas_orszagut) + (km_varos / 100 * fogyasztas_varos)) * uzemanyagar + autopalya_matrica + parkolas
+print(f'Az utikoltseg : {koltseg} HUF')
